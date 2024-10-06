@@ -1,0 +1,13 @@
+.calculator {
+  width: 100%;
+  max-width: 400px; /* Limita el ancho máximo */
+  margin: 20px;
+  border: 1px solid #ff66b2;
+  border-width: 2px;
+  border-style: dotted;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

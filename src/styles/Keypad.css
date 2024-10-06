@@ -1,0 +1,85 @@
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .keypad button {
+    background-color: #2c2c2c;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: white;
+  }
+  
+  /* Estilos para las teclas especiales (C, /, *, -, +, =, .) en color rosa */
+  .keypad button:nth-child(1),  /* 'C' */
+  .keypad button:nth-child(2),  /* '/' */
+  .keypad button:nth-child(3),  /* '*' */
+  .keypad button:nth-child(4),  /* '-' */
+  .keypad button:nth-child(8),  /* '+' */
+  .keypad button:nth-child(12), /* '=' */
+  .keypad button:nth-child(16) { /* '.' */
+    background-color: #ad83cf;
+    color: white;
+  }
+  
+  .keypad button:hover {
+    background-color: #6d6d6d;
+  }
+  
+  /* Cambia el color de fondo para las teclas rosas al hacer hover */
+  .keypad button:nth-child(1):hover,
+  .keypad button:nth-child(2):hover,
+  .keypad button:nth-child(3):hover,
+  .keypad button:nth-child(4):hover,
+  .keypad button:nth-child(8):hover,
+  .keypad button:nth-child(12):hover,
+  .keypad button:nth-child(16):hover {
+    background-color: #896ba1;
+  }
+  
+  /* Color al hacer clic (active) para todas las teclas */
+  .keypad button:active {
+    background-color: #bbb;
+  }
+  
+  /* Color al hacer clic (active) para las teclas rosas */
+  .keypad button:nth-child(1):active,
+  .keypad button:nth-child(2):active,
+  .keypad button:nth-child(3):active,
+  .keypad button:nth-child(4):active,
+  .keypad button:nth-child(8):active,
+  .keypad button:nth-child(12):active,
+  .keypad button:nth-child(16):active {
+    background-color: #ff3399;
+  }
+  
+  /* Botón 0 ocupa dos columnas */
+  .keypad button:nth-child(16) {
+    grid-column: span 2;
+  }
+
+  @media (max-width: 768px) {
+    .keypad button {
+      padding: 15px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (móviles) */
+  @media (max-width: 480px) {
+    .keypad {
+      gap: 5px;
+      padding: 10px;
+    }
+  
+    .keypad button {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  }
