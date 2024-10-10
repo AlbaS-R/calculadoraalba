@@ -28,12 +28,12 @@
     color: white;
   }
 
-/* Para cambiar el color al interactuar de las teclas.*/
+/* Para cambiar el color de las teclas, el hover es por que cambia el color cuando el usuario pasa el mouse por encima.*/
   .keypad button:hover {
     background-color: #6d6d6d;
   }
   
-  /* Cambia el color de las teclas rositas, el hover es por que cambia el color cuando el usuario interactua con las teclas. */
+  /* Cambia el color esta vez de las teclas rositas. */
   .keypad button:nth-child(1):hover,
   .keypad button:nth-child(2):hover,
   .keypad button:nth-child(3):hover,
@@ -44,12 +44,12 @@
     background-color: #896ba1;
   }
   
-  /* Color al hacer clic (active) para todas las teclas */
+  /* El active es para que me cambie el color de las teclas cuando cliquea. */
   .keypad button:active {
     background-color: #bbb;
   }
   
-  /* Color al hacer clic (active) para las teclas rosas */
+  /* Lo mismo de antes pero para las rosas */
   .keypad button:nth-child(1):active,
   .keypad button:nth-child(2):active,
   .keypad button:nth-child(3):active,
@@ -72,7 +72,6 @@
     }
   }
   
-  /* Estilos para pantallas pequeñas (móviles) */
   @media (max-width: 480px) {
     .keypad {
       gap: 5px;
