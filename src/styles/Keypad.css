@@ -16,23 +16,24 @@
     color: white;
   }
   
-  /* Estilos para las teclas especiales (C, /, *, -, +, =, .) en color rosa */
-  .keypad button:nth-child(1),  /* 'C' */
-  .keypad button:nth-child(2),  /* '/' */
-  .keypad button:nth-child(3),  /* '*' */
-  .keypad button:nth-child(4),  /* '-' */
-  .keypad button:nth-child(8),  /* '+' */
-  .keypad button:nth-child(12), /* '=' */
-  .keypad button:nth-child(16) { /* '.' */
+  /* Esto es para poner especificas letras en rosita, en este caso yo he querido poner la C, la división, la multiplicación, la resta, la suma, el igual y el puntito. */
+  .keypad button:nth-child(1),
+  .keypad button:nth-child(2), 
+  .keypad button:nth-child(3), 
+  .keypad button:nth-child(4), 
+  .keypad button:nth-child(8), 
+  .keypad button:nth-child(12),
+  .keypad button:nth-child(16) {
     background-color: #ad83cf;
     color: white;
   }
-  
+
+/* Para cambiar el color al interactuar de las teclas.*/
   .keypad button:hover {
     background-color: #6d6d6d;
   }
   
-  /* Cambia el color de fondo para las teclas rosas al hacer hover */
+  /* Cambia el color de las teclas rositas, el hover es por que cambia el color cuando el usuario interactua con las teclas. */
   .keypad button:nth-child(1):hover,
   .keypad button:nth-child(2):hover,
   .keypad button:nth-child(3):hover,
@@ -58,8 +59,8 @@
   .keypad button:nth-child(16):active {
     background-color: #ff3399;
   }
-  
-  /* Botón 0 ocupa dos columnas */
+
+/*Para que el num 16 ocupe dos columnas, en este caso es el punto*/
   .keypad button:nth-child(16) {
     grid-column: span 2;
   }
